@@ -4,6 +4,7 @@ resource "aws_vpc" "clc_vpc" {
 
   tags = {
     Name = "terraform-vpc-automation"
+    
   }
 }
 
