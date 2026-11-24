@@ -1,38 +1,39 @@
-variable "environment" {
-  type    = string
-  default = "dev"
-}
+#EXEMPLOS DE VARIAVEIS"
+# variable "environment" {
+#   type    = string
+#   default = "dev"
+# }
 
-variable "az_count" {
-  type    = number
-  default = 2
-}
+# variable "az_count" {
+#   type    = number
+#   default = 2
+# }
 
-variable "enable_nat" {
-  type    = bool
-  default = true
-}
+# variable "enable_nat" {
+#   type    = bool
+#   default = true
+# }
 
-variable "azs" {
-  type    = list(string)
-  default = ["us-east-1a", "us-east-1b"]
-}
+# variable "azs" {
+#   type    = list(string)
+#   default = ["us-east-1a", "us-east-1b"]
+# }
 
-variable "instance_types" {
-  type = map(string)
-  default = {
-    dev  = "t3.micro"
-    prod = "t3.small"
-  }
-}
+# variable "instance_types" {
+#   type = map(string)
+#   default = {
+#     dev  = "t3.micro"
+#     prod = "t3.small"
+#   }
+# }
 
-variable "app" {
-  type = object({
-    name = string
-    port = number
-  })
-  default = {
-    name = "web"
-    port = 80
-  }
-}
+# variable "app" {
+#   type = object({
+#     name = string
+#     port = number
+#   })
+#   default = {
+#     name = "web"
+#     port = 80
+#   }
+# }
